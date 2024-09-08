@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link href="ab.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+ <h1>Error Handling Project</h1>   
+ <p id="errormes"></p>
+ <p id="errorme"></p>
+ <p id="errorms"></p>
+ <script>
+    var products= (a,b,c) => a*b+c;
+    try{
+        document.getElementById("errormes").innerHTML="The number answer of 66 * 77 + 2  is "+ products(66,77,2);
+        document.getElementById("errorme").innerHTML="The string answer of 66 * 77 + 2  is "+ products (String(66),String(77),String(2));
+        docment.in="The string answer of 66 * 77 + 2  is "+ producs (String(66),String(77),String(2));
+    }
+    catch(error){
+        document.getElementById("errorms").innerHTML="The error is = "+error.message;
+    }
+ </script>
+</body>
+</html>
